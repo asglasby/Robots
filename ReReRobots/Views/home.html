@@ -1,0 +1,12 @@
+﻿We successfully made it to the homepage!
+<!--{{robotList}}-->
+<input type="text" ng-model="search" placeholder="Enter Robot"/>
+<table class="table table-responsive">
+    <tr ng-repeat="robot in robotList | filter:search">
+        <td>{{robot.name | reverse}}</td>
+        <td><button class="btn btn-danger" ng-click="deleteRobot(robot.index)">Delete</button> </td>
+        <td><a class="btn btn-info" href="#/details/{{robot.index}}">Details To Robot</a></td>
+        <td><a class="btn btn-info" href="#/editRobot/{{robot.index}}">Link to Edit</a></td>
+        
+</tr>
+</table>

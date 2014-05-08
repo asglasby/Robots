@@ -1,0 +1,5 @@
+﻿<input type="text" ng-model="name" placeholder="Enter Robot Name" />
+<input type="text" ng-model="metal" placeholder="Enter Robot Metal Type" />
+<input type="text" ng-model="imgUrl" placeholder="Enter the Image URL" />
+<img ng-src="{{imgUrl}}" />
+<div class="btn btn-danger" ng-click="addRobot(name, metal, imgUrl);"></div>
